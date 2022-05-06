@@ -3,8 +3,8 @@ Feature: Carrito de Compra Farmacia
   quiero poder agregar productos al carrito
   para hacer una compra online de productos
 
-  Background: Agregar producto
+  Scenario: Agregar producto
     Given que estoy en la url "https://www.farmaciasahumada.cl/catalogsearch/result/?q=bromex"
-    When presiono el boton guardar
+    When presiono el boton Agregar al carrito
     Then se debe agregar correctamente el producto al carrito
     And ver el carrito de compra en pantalla
